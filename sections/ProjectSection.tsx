@@ -3,7 +3,8 @@ import { useEffect, useRef } from "react";
 import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
 import coin from ".././public/projects/coin.png";
-import portfo from ".././public/projects/portfolio.png";
+//import portfo from ".././public/projects/portfolio.png";
+import portfo from "../components/portfolio.png";
 import comsats from ".././public/projects/comsats.png";
 
 import ProjectCard from "@/components/ProjectCard";
@@ -93,7 +94,7 @@ const projects = [
     type: "Frontend",
     image: (
       <Image
-        src="/projects/portfolio.png"
+        src={portfo}
         sizes="100vw"
         fill
         alt="Portfolio"
