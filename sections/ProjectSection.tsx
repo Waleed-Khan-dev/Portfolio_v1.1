@@ -93,10 +93,10 @@ const projects = [
     type: "Frontend",
     image: (
       <Image
-        src={portfo}
+        src=".././public/projects/portfolio.png"
         sizes="100vw"
         fill
-        alt="Terminal Portfolio"
+        alt="Portfolio"
         className="transition-transform duration-500 hover:scale-110 object-cover"
       />
     ),
