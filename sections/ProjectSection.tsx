@@ -93,7 +93,7 @@ const projects = [
     type: "Frontend",
     image: (
       <Image
-        src=".././public/projects/portfolio.png"
+        src="/projects/portfolio.png"
         sizes="100vw"
         fill
         alt="Portfolio"
