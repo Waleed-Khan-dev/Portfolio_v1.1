@@ -17,14 +17,14 @@ import laptop from "../public/laptop-illustration.webp";
 const HeroSection: React.FC = () => {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch("MERN-STACK.pdf").then((response) => {
+    fetch("DotNet.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "MERN-STACK.pdf";
+        alink.download = "DotNet.pdf";
         alink.click();
       });
     });
