@@ -2,9 +2,9 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
-import  coin from '.././public/projects/coin.png'
-import portfo from '.././public/projects/portfo.png'
-import comsats from '.././public/projects/comsats.png'
+import coin from ".././public/projects/coin.png";
+import portfo from ".././public/projects/portfolio.png";
+import comsats from ".././public/projects/comsats.png";
 
 import ProjectCard from "@/components/ProjectCard";
 import { useSection } from "context/section";
@@ -15,9 +15,9 @@ import terminalPortfolio from "public/projects/terminal-portfolio.webp";
 import haruFashion from "public/projects/haru-fashion.webp";
 import haruApi from "public/projects/haru-api.webp";
 import astroPaper from "public/projects/astro-paper.webp";
-import Fyp from 'public/2.png'
-import house from 'public/3.png'
-import blog from 'public/4.png'
+import Fyp from "public/2.png";
+import house from "public/3.png";
+import blog from "public/4.png";
 
 const ProjectSection: React.FC = () => {
   const { theme } = useTheme();
@@ -44,7 +44,7 @@ const ProjectSection: React.FC = () => {
           order={1}
           show={isOnScreen}
         >
-          <h2 className="section-heading">Featured Projects</h2>
+          <h2 className="section-heading">Projects</h2>
         </RoughNotation>
       </div>
       <span className="project-desc text-center block mb-4" ref={elementRef}>
@@ -59,7 +59,7 @@ const ProjectSection: React.FC = () => {
       <div className="others text-center mb-16">
         Other projects can be explored in{" "}
         <a
-          href="https://github.com/Rizu0007"
+          href="https://github.com/Waleed-Khan-dev"
           className="font-medium underline link-outline text-marrsgreen dark:text-carrigreen whitespace-nowrap"
         >
           my github profile
@@ -70,28 +70,9 @@ const ProjectSection: React.FC = () => {
 };
 
 const projects = [
-  
-  {
-    title: "Comsats Cryptocurrency Coin (FYP)",
-    type: "Blockchain+ mern stack",
-    image: (
-      <Image
-        src={Fyp}
-        sizes="100vw"
-        fill
-        alt="Fyp"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "Successfully deployed the token within the university, students and faculty engage with campus services by introducing a blockchain-based payment system. • Creation of a custom ERC20 token using Solidity,apply Advance authentication • Different shops are available in the Website where Student can purchase things with our Comsats Coin • Operations like deposite and withdrawal can be performed in the account",
-    tags: ["React.js", "Node", "Tailwind Css", "solidity"],
-    liveUrl: "https://fyp-2024-two.vercel.app/",
-    codeUrl: "https://github.com/Rizu0007/FYP2024.git",
-    bgColor: "bg-[#A6CECE]",
-  },
   {
     title: "Comsats accommodation platform",
-    type: "Full stack",
+    type: "Full Stack",
     image: (
       <Image
         src={house}
@@ -104,7 +85,7 @@ const projects = [
     desc: "Led the development of a university accommodation finder using React.js and Tailwind CSS, to assist students in discovering nearby housing options and room shares • Engineered a seamless integration with Google Maps API to provide students with accurate location • Architected a secure user authentication system with Firebase, allowing users to create personalized accounts for posting and responding to rental and room-sharing ads",
     tags: ["Solidity", "Next.js", "Hardhat", "Smart Contract"],
     liveUrl: "https://realtor-v2.vercel.app/",
-    codeUrl: "https://github.com/Rizu0007/Comsats-House.git",
+    codeUrl: "https://github.com/Waleed-Khan-dev/Comsats-House",
     bgColor: "bg-[#C5E4E7]",
   },
   {
@@ -121,27 +102,9 @@ const projects = [
     ),
     desc: "My perfolio website in new version developed with React and TypeScript. In this project, Tailwindcss library is used for styling.",
     tags: ["Next.js", "TypeScript", "Tailwindcsss"],
-    liveUrl: "https://rizu.vercel.app/",
-    codeUrl: "https://github.com/Rizu0007/Portfolio-_v2.git",
+    liveUrl: "",
+    codeUrl: "https://github.com/Waleed-Khan-dev/Portfolio_v1.1",
     bgColor: "bg-[#B4BEE0]",
-  },
-  {
-    title: "ExolorX Blog Application",
-    type: "Frontend",
-    image: (
-      <Image
-        src={blog}
-        sizes="100vw"
-        fill
-        alt="AstroPaper"
-        className="transition-transform duration-500 hover:scale-110 object-cover"
-      />
-    ),
-    desc: "Developed a  blog platform using Next.js and Prisma, categorizing content to highlight top and latest post from the user",
-    tags: ["next.js", "TypeScript", "Prisma", "TailwindCSS"],
-    liveUrl: "https://dailyblog-demo.vercel.app/",
-    codeUrl: "https://github.com/Rizu0007/exploreX.git",
-    bgColor: "bg-[#9FD0E3]",
   },
 ];
 

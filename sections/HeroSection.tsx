@@ -140,7 +140,7 @@ const HeroSection: React.FC = () => {
 
       <div className="lg:basis-2/3 z-10 relative">
         <span className="text-w lg:text-lg font-medium dark:text-carrigreen">
-          Hi my name is
+          Hi, I'm
         </span>
         <div className="overflow-hidden">
           <h1 className="text-animation text-4xl md:text-5xl lg:text-7xl md:my-2 font-semibold my-1">
@@ -156,16 +156,14 @@ const HeroSection: React.FC = () => {
           <p className="tracking-widest">
             I'm a{" "}
             <span className="text-amber-600 font-bold underline space-x-4">
-              Front-End
+              Software Developer
             </span>{" "}
-            and{" "}
-            <span className="text-amber-600 font-bold underline">
-              {" "}
-              Backend Developer
-            </span>{" "}
-            developer based in pakistan. I describe myself as a passionate
-            developer who loves coding and always learning about new
-            technologies.
+            with 1 year of experience in .NET technologies, specializing in
+            RESTful API integration, SQL Server Management, and Web API
+            development in .NET 6 using Swagger. Proficient in building dynamic
+            applications in{" "}
+            <span className="text-amber-600 font-bold underline">React</span>{" "}
+            with a focus on delivering scalable and efficient solutions.
           </p>
           <p></p>
           <div
@@ -193,13 +191,18 @@ const HeroSection: React.FC = () => {
         <div className="w-full h-auto mt-[1px]">
           <button
             className="w-[190px] border-[2px] border-solid text-amber-500 font-bold border-green-200 px-5 py-3     
-   bg-yellow-50 rounded-[30px] scale-[.90] hover:scale-[.95] hover:bg-marrsgreen transition ease-in-out duration-500"
+           bg-yellow-50 rounded-[30px] scale-[.90] hover:scale-[.95] hover:bg-marrsgreen transition ease-in-out duration-500"
             onClick={onButtonClick}
           >
             Download CV
           </button>
-          <button className="w-[150px] border-[2px] border-solid border-green-200 px-5 py-3 bg-dark-100 rounded-[30px] scale-[.90] hover:scale-[.95] transition-all hover:bg-marrsgreen">
-            Contact me!
+          <button
+            onClick={() =>
+              window.open("https://github.com/Waleed-Khan-dev", "_blank")
+            }
+            className="w-[150px] border-[2px] border-solid border-green-200 px-5 py-3 bg-dark-100 rounded-[30px] scale-[.90] hover:scale-[.95] transition-all hover:bg-marrsgreen"
+          >
+            Github Profile
           </button>
         </div>
       </div>

@@ -9,7 +9,8 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import rizwan from "../public/rizwan.webp";
+import waleed from "../public/profilePic1.png";
+
 import AboutBgSvg from "@/components/AboutBgSvg";
 import EduGroup from "@/components/EduGroup";
 
@@ -135,11 +136,11 @@ const AboutSection: React.FC = () => {
 
                 <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl">
                   <Image
-                    src={rizwan}
-                    width={1700}
-                    height={1790}
+                    src={waleed}
+                    width={1900}
+                    height={1990}
                     priority
-                    alt="rizwan ali"
+                    alt="waleed khan picture"
                     className="rounded-md"
                   />
                 </div>
@@ -169,11 +170,13 @@ const AboutSection: React.FC = () => {
             </div>
 
             <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
-              With 1 years of comprehensive experience in web application
-              development, I have honed my skills in both frontend and blockchain
-              development. In addition to my hands-on experience in web
-              development, my education has also played a critical role in
-              providing a strong foundation for my career.
+              With 1 year of experience as a Software Developer, I have
+              developed expertise in .NET technologies, particularly in building
+              RESTful APIs and managing SQL Server databases. My focus has been
+              on developing robust Web APIs using .NET 6 and Swagger, while also
+              crafting dynamic front-end applications with React. This
+              combination of skills allows me to deliver scalable and efficient
+              full-stack solutions.
             </p>
 
             <div
@@ -197,34 +200,27 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "Bs Software engineering",
-    subTitle: "Comsats University islamabad ",
-    list: [
-      "Software Engineering ",
-      " 2020 ~ 2024"
-
-    ],
+    title: "BS Computer Science",
+    subTitle: "COMSATS University Islamabad",
+    list: ["Computer Science", " 2020 ~ 2024"],
   },
   {
     id: 2,
     title: "Experience",
-    subTitle: "Syntax Software House",
-    list: [
-      "React.js",
-      "Next.js",
-      "January 2023 – May 2023"
-    ],
+    subTitle: "Powersoft19",
+    list: ["Software Developer", "FEB, 2024 ~ Present"],
   },
   {
     id: 3,
+    title: "Internship",
+    subTitle: "Powersoft19",
+    list: ["Software Developer Intern", "JAN, 2023 ~ MAR, 2023"],
+  },
+  {
+    id: 4,
     title: "INTERESTS",
     subTitle: "",
-    list: [" Cricket",
-    "GAMING",
-    "Travelling"
-
-  ],
-    
+    list: [" Cricket", "Gaming", "Travelling"],
   },
 ];
 

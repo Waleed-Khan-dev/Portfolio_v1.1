@@ -27,14 +27,14 @@ export const meta = {
   type: "website",
   ogImage: `${process.env.NEXT_PUBLIC_URL}/satnaing-dev-og-new.png`,
   siteName: "M Waleed Khan",
-  imageAlt: "M Waleed Khan portfolio website",
+  imageAlt: "M Waleed Khan Portfolio Website",
 };
 
 const Home: NextPage<Props> = ({ blogPosts }) => {
   return (
     <>
       <AppHead
-        title="M Waleed Khan - A Full-stack Developer"
+        title="M Waleed Khan - A Full-Stack Developer"
         url={`${process.env.NEXT_PUBLIC_URL}`}
         meta={meta}
       />

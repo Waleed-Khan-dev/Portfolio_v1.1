@@ -14,7 +14,7 @@ const navLinks = [
         <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z" />
       </svg>
     ),
-    text: "Who am i?",
+    text: "Who am I?",
   },
   {
     url: "#projects",
@@ -23,7 +23,7 @@ const navLinks = [
         <path d="m7.375 16.781 1.25-1.562L4.601 12l4.024-3.219-1.25-1.562-5 4a1 1 0 0 0 0 1.562l5 4zm9.25-9.562-1.25 1.562L19.399 12l-4.024 3.219 1.25 1.562 5-4a1 1 0 0 0 0-1.562l-5-4zm-1.649-4.003-4 18-1.953-.434 4-18z" />
       </svg>
     ),
-    text: ".PROJECTS",
+    text: "Projects",
   },
   {
     url: "#blog",
@@ -94,7 +94,7 @@ const Header: React.FC = () => {
             href="/"
             className="text-xl font-bold text-carrigreen  sm:text-4xl md:hover:text-white dark:md:hover:text-carrigreen focus-visible:outline-marrsgreen dark:focus-visible:outline-carrigreen"
           >
-            RIZU
+            MWK
             <span className="text-white">.dev</span>
           </Link>
           <nav className="flex items-center">
@@ -116,7 +116,6 @@ const Header: React.FC = () => {
                 ))}
               </ul>
             </div>
-           
           </nav>
         </div>
       </div>

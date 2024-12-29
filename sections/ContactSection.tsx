@@ -49,9 +49,14 @@ const ContactSection: React.FC = () => {
           challenges. If you have opportunities for collaboration or want to
           build something amazing, don't hesitate to contact me!
         </p>
-        <LinkButton href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
-          Get in touch!
-        </LinkButton>
+        <button
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/muhammadwk/", "_blank")
+          }
+          className="w-[150px] border-[2px] border-solid border-green-200 px-5 py-3 bg-dark-100 rounded-[30px] scale-[.90] hover:scale-[.95] transition-all hover:bg-marrsgreen"
+        >
+          Contact Me
+        </button>
       </div>
     </section>
   );
